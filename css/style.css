@@ -109,11 +109,17 @@ body {
     transform: translate(-50%, -50%);
     text-align: center; }
 
-.section-about {
+.about {
   background-color: #f7f7f7;
   padding: 25rem 0;
-  margin-top: -20vh;
-  display: grid; }
+  margin-top: -20vh; }
+  .about__heading {
+    display: flex;
+    justify-content: center; }
+  .about__content {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center; }
 
 .section-features {
   background-color: rebeccapurple; }
