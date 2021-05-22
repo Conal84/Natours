@@ -3,14 +3,20 @@
   padding: 25rem 0;
   margin-top: -20vh;
 
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  justify-items: center;
+
   &__heading {
-    display: flex;
-    justify-content: center;
+    grid-column: 1 / span 2;
   }
 
-  &__content {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-items: center;
+  &__text {
+    padding: 0 8rem;
+  }
+
+  &__images {
   }
 }
