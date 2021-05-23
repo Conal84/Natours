@@ -116,23 +116,23 @@ body {
   transform: translateY(0); }
 
 .composition {
-  width: 50vw;
+  width: 50%;
   position: relative; }
   .composition__photo {
-    width: 40%;
+    width: 100%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     border-radius: 2px;
     position: absolute;
     transition: all 0.2s;
     outline-offset: 2rem; }
     .composition__photo--p1 {
-      left: 0;
+      left: -8rem;
       top: -2rem; }
     .composition__photo--p2 {
-      right: 0;
+      right: -14rem;
       top: 2rem; }
     .composition__photo--p3 {
-      left: 20%;
+      left: 10%;
       top: 10rem; }
     .composition__photo:hover {
       outline: 1.5rem solid #55c57a;
@@ -167,17 +167,15 @@ body {
 
 .about {
   background-color: #f7f7f7;
-  padding: 25rem 0;
+  padding: 25rem 25rem;
   margin-top: -20vh;
   display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 2rem;
+  grid-gap: 8rem;
   justify-items: center; }
   .about__heading {
     grid-column: 1 / span 2; }
-  .about__text {
-    padding: 0 2vw 0 15vw; }
 
 .section-features {
   background-color: rebeccapurple; }

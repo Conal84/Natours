@@ -1,9 +1,9 @@
 .composition {
-  width: 50vw;
+  width: 50%;
   position: relative;
 
   &__photo {
-    width: 40%;
+    width: 100%;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
     border-radius: 2px;
     position: absolute;
@@ -11,17 +11,17 @@
     outline-offset: 2rem;
 
     &--p1 {
-      left: 0;
+      left: -8rem;
       top: -2rem;
     }
 
     &--p2 {
-      right: 0;
+      right: -14rem;
       top: 2rem;
     }
 
     &--p3 {
-      left: 20%;
+      left: 10%;
       top: 10rem;
     }
 
