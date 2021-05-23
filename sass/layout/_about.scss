@@ -1,6 +1,6 @@
 .about {
   background-color: $color-grey-light-1;
-  padding: 25rem 25rem;
+  padding: $default-padding;
   margin-top: -20vh;
 
   display: grid;
@@ -11,8 +11,5 @@
 
   &__heading {
     grid-column: 1 / span 2;
-  }
-
-  &__text {
   }
 }

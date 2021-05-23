@@ -1,3 +1,14 @@
-.section-features {
-  background-color: rebeccapurple;
+.features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 6rem;
+  justify-items: center;
+  padding: $default-padding;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url(../img/nat-4.jpg);
+  background-size: cover;
 }
