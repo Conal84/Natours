@@ -396,6 +396,36 @@ body {
 .form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
   opacity: 1; }
 
+.popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999; }
+  .popup__content {
+    height: 75vh;
+    width: 75vw;
+    background-color: #fff;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center; }
+  .popup__img1 {
+    background-color: orangered; }
+  .popup__text-section {
+    grid-row: 1 / span 2;
+    grid-column: 2 / -1;
+    padding: 4rem; }
+  .popup__img2 {
+    background-color: orchid; }
+
 .container {
   display: grid; }
 
