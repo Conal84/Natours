@@ -414,17 +414,17 @@ body {
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 25vw);
+    grid-template-rows: repeat(2, 37.5vh);
     align-items: center; }
-  .popup__img1 {
-    background-color: orangered; }
+  .popup__img {
+    height: 37.5vh;
+    width: 25vw;
+    object-fit: cover; }
   .popup__text-section {
     grid-row: 1 / span 2;
     grid-column: 2 / -1;
-    padding: 4rem; }
-  .popup__img2 {
-    background-color: orchid; }
+    padding: 0 4rem; }
 
 .container {
   display: grid; }
