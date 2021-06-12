@@ -499,6 +499,12 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+  @media (max-width: 75em) {
+    .header {
+      height: 70vh; } }
+  @media (max-width: 56.25em) {
+    .header {
+      height: 50vh; } }
 
 .about {
   background-color: #f7f7f7;

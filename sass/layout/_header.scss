@@ -28,4 +28,16 @@
     transform: translate(-50%, -50%);
     text-align: center;
   }
+
+  @include respond(tab-land) {
+    height: 70vh;
+  }
+
+  @include respond(tab-port) {
+    height: 50vh;
+  }
+
+  // @include respond(phone) {
+  //   padding: 0;
+  // }
 }
