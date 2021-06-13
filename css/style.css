@@ -146,14 +146,16 @@ body {
   grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(7, 1fr);
   align-items: center; }
-  @media (max-width: 56.25em) {
+  @media (max-width: 75em) {
     .composition {
+      width: 50%;
       grid-column: 1 / span 2; } }
   .composition__photo {
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     border-radius: 2px;
     transition: all 0.2s;
-    outline-offset: 2rem; }
+    outline-offset: 2rem;
+    width: 100%; }
     .composition__photo--p1 {
       grid-row: 1 / 4;
       grid-column: 2 / 6; }
@@ -516,17 +518,22 @@ body {
 
 .about {
   background-color: #f7f7f7;
-  padding: 25rem;
+  padding: 10vw;
   margin-top: -20vh;
   display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 8rem;
+  grid-row-gap: 4rem;
+  grid-column-gap: 2rem;
   justify-items: center; }
   .about__heading {
     grid-column: 1 / span 2; }
-  @media (max-width: 56.25em) {
+    @media screen and (max-width: 2000px) {
+      .about__heading {
+        padding-top: 15rem; } }
+  @media (max-width: 75em) {
     .about__text {
+      width: 75%;
       grid-column: 1 / span 2; } }
 
 .features {
@@ -534,7 +541,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 6rem;
   justify-items: center;
-  padding: 25rem;
+  padding: 10vw;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg);
   background-size: cover;
   clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
@@ -545,7 +552,7 @@ body {
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 2rem;
   justify-items: center;
-  padding: 25rem;
+  padding: 10vw;
   background-color: #f7f7f7;
   margin-top: -24rem; }
   .tours__heading {
@@ -563,13 +570,13 @@ body {
   grid-gap: 2rem;
   justify-items: center;
   align-items: center;
-  padding: 25rem;
+  padding: 10vw;
   position: relative; }
 
 .book {
   display: grid;
   justify-items: center;
-  padding: 25rem;
+  padding: 10vw;
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
   .book__container {
     height: 40rem;
@@ -589,7 +596,7 @@ body {
   grid-gap: 2rem;
   justify-items: center;
   align-items: center;
-  padding-top: 25rem;
+  padding-top: 10vw;
   background-color: #333;
   font-size: 1.4rem; }
   .footer__logo-box {

@@ -6,15 +6,21 @@
   display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 8rem;
+  grid-row-gap: 4rem;
+  grid-column-gap: 2rem;
   justify-items: center;
 
   &__heading {
     grid-column: 1 / span 2;
+
+    @media screen and (max-width: 2000px) {
+      padding-top: $pad-md;
+    }
   }
 
   &__text {
-    @include respond(tab-port) {
+    @include respond(tab-land) {
+      width: 75%;
       grid-column: 1 / span 2;
     }
   }

@@ -4,7 +4,8 @@
   grid-template-columns: repeat(7, 1fr);
   align-items: center;
 
-  @include respond(tab-port) {
+  @include respond(tab-land) {
+    width: 50%;
     grid-column: 1 / span 2;
   }
 
@@ -13,6 +14,7 @@
     border-radius: 2px;
     transition: all 0.2s;
     outline-offset: 2rem;
+    width: 100%;
 
     &--p1 {
       grid-row: 1 / 4;
