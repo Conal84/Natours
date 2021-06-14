@@ -7,6 +7,7 @@
   @include respond(tab-land) {
     width: 50%;
     grid-column: 1 / span 2;
+    padding-bottom: $pad-sm;
   }
 
   &__photo {
