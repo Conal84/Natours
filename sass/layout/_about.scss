@@ -11,6 +11,10 @@
   grid-column-gap: 2rem;
   justify-items: center;
 
+  @media screen and (max-width: 1200px) {
+    padding: 30rem 10rem 15rem 10rem;
+  }
+
   &__heading {
     grid-column: 1 / span 2;
     text-align: center;
