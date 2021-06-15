@@ -1,6 +1,7 @@
 .about {
+  width: 100vw;
   background-color: $color-grey-light-1;
-  padding: $default-padding;
+  padding: 35rem 20rem 20rem 20rem;
   margin-top: -20vh;
 
   display: grid;
@@ -12,14 +13,11 @@
 
   &__heading {
     grid-column: 1 / span 2;
-
-    @media screen and (max-width: 2000px) {
-      padding-top: $pad-md;
-    }
+    text-align: center;
   }
 
   &__text {
-    @include respond(tab-land) {
+    @media screen and (max-width: 1200px) {
       width: 75%;
       grid-column: 1 / span 2;
     }

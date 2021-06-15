@@ -51,7 +51,7 @@ body {
   color: #777;
   padding: 3rem;
   box-sizing: border-box; }
-  @media (max-width: 56.25em) {
+  @media screen and (max-width: 900px) {
     body {
       padding: 0; } }
 
@@ -146,11 +146,10 @@ body {
   grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(7, 1fr);
   align-items: center; }
-  @media (max-width: 75em) {
+  @media screen and (max-width: 1200px) {
     .composition {
       width: 50%;
-      grid-column: 1 / span 2;
-      padding-bottom: 5rem; } }
+      grid-column: 1 / span 2; } }
   .composition__photo {
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     border-radius: 2px;
@@ -522,8 +521,9 @@ body {
       clip-path: polygon(0 0, 100% 0, 100% 30vh, 0 100%); } }
 
 .about {
+  width: 100vw;
   background-color: #f7f7f7;
-  padding: 10vw;
+  padding: 35rem 20rem 20rem 20rem;
   margin-top: -20vh;
   display: grid;
   grid-template-rows: auto auto;
@@ -532,20 +532,19 @@ body {
   grid-column-gap: 2rem;
   justify-items: center; }
   .about__heading {
-    grid-column: 1 / span 2; }
-    @media screen and (max-width: 2000px) {
-      .about__heading {
-        padding-top: 15rem; } }
-  @media (max-width: 75em) {
+    grid-column: 1 / span 2;
+    text-align: center; }
+  @media screen and (max-width: 1200px) {
     .about__text {
       width: 75%;
       grid-column: 1 / span 2; } }
 
 .features {
+  width: 100vw;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 30rem));
   grid-gap: 6rem;
-  justify-items: center;
+  justify-content: center;
   padding: 10vw;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg);
   background-size: cover;
@@ -553,6 +552,7 @@ body {
   margin-top: -10rem; }
 
 .tours {
+  width: 100vw;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 2rem;
@@ -570,6 +570,7 @@ body {
     padding: 3rem 0; }
 
 .stories {
+  width: 100vw;
   display: grid;
   grid-template-rows: 12rem repeat(3, 1fr) 12rem;
   grid-gap: 2rem;
@@ -579,6 +580,7 @@ body {
   position: relative; }
 
 .book {
+  width: 100vw;
   display: grid;
   justify-items: center;
   padding: 10vw;
@@ -595,6 +597,7 @@ body {
     padding: 6rem; }
 
 .footer {
+  width: 100vw;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);

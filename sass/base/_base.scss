@@ -19,7 +19,7 @@ body {
   padding: 3rem;
   box-sizing: border-box;
 
-  @include respond(tab-port) {
+  @media screen and (max-width: 900px) {
     padding: 0;
   }
 }

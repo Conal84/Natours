@@ -4,10 +4,9 @@
   grid-template-columns: repeat(7, 1fr);
   align-items: center;
 
-  @include respond(tab-land) {
+  @media screen and (max-width: 1200px) {
     width: 50%;
     grid-column: 1 / span 2;
-    padding-bottom: $pad-sm;
   }
 
   &__photo {

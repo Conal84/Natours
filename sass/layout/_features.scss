@@ -1,8 +1,9 @@
 .features {
+  width: 100vw;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 30rem));
   grid-gap: 6rem;
-  justify-items: center;
+  justify-content: center;
   padding: $default-padding;
   background-image: linear-gradient(
       to right bottom,
