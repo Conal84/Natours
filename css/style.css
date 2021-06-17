@@ -49,7 +49,6 @@ body {
   font-size: 1.6rem;
   line-height: 1.7;
   color: #777;
-  padding: 3rem;
   box-sizing: border-box; }
   @media screen and (max-width: 900px) {
     body {
@@ -58,7 +57,10 @@ body {
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
-  margin-bottom: 60px; }
+  margin-bottom: 6rem; }
+  @media screen and (max-width: 900px) {
+    .heading-primary {
+      margin-bottom: 3rem; } }
   .heading-primary--main {
     display: block;
     font-size: 6rem;
@@ -67,12 +69,20 @@ body {
     animation-name: moveInLeft;
     animation-duration: 5s;
     animation-timing-function: ease-out; }
+    @media screen and (max-width: 900px) {
+      .heading-primary--main {
+        font-size: 3rem;
+        letter-spacing: 2rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1.75rem;
     animation: moveInRight 2s ease-out; }
+    @media screen and (max-width: 900px) {
+      .heading-primary--sub {
+        font-size: 1rem;
+        letter-spacing: 0.75rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -104,6 +114,9 @@ body {
   transition: all 0.2s;
   border: none;
   cursor: pointer; }
+  @media screen and (max-width: 900px) {
+    .btn, .btn:link, .btn:visited {
+      padding: 1rem 2.5rem; } }
 
 .btn:hover {
   transform: translateY(-3px);
@@ -424,7 +437,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   position: fixed;
   top: 0;
   left: 0;
@@ -537,6 +550,9 @@ body {
   .about__heading {
     grid-column: 1 / span 2;
     text-align: center; }
+    @media screen and (max-width: 1000px) {
+      .about__heading {
+        font-size: 2.5rem; } }
   @media screen and (max-width: 1200px) {
     .about__text {
       width: 75%;
@@ -548,7 +564,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(25rem, 30rem));
   grid-gap: 6rem;
   justify-content: center;
-  padding: 10vw;
+  padding: 30rem 0;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg);
   background-size: cover;
   clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
@@ -560,15 +576,16 @@ body {
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 2rem;
   justify-items: center;
-  padding: 10vw;
+  padding: 30rem 0;
   background-color: #f7f7f7;
-  margin-top: -24rem; }
+  margin-top: -14rem; }
   .tours__heading {
     grid-row: 1 / span 3;
     text-transform: uppercase; }
   .tours__content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
     grid-gap: 10rem;
     padding: 3rem 0; }
 
@@ -579,14 +596,14 @@ body {
   grid-gap: 2rem;
   justify-items: center;
   align-items: center;
-  padding: 10vw;
+  padding: 30rem;
   position: relative; }
 
 .book {
   width: 100vw;
   display: grid;
   justify-items: center;
-  padding: 10vw;
+  padding: 30rem 0;
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
   .book__container {
     height: 40rem;
@@ -607,7 +624,7 @@ body {
   grid-gap: 2rem;
   justify-items: center;
   align-items: center;
-  padding-top: 10vw;
+  padding-top: 30rem;
   background-color: #333;
   font-size: 1.4rem; }
   .footer__logo-box {

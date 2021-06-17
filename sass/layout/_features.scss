@@ -4,7 +4,7 @@
   grid-template-columns: repeat(auto-fit, minmax(25rem, 30rem));
   grid-gap: 6rem;
   justify-content: center;
-  padding: $default-padding;
+  padding: $pad-lg 0;
   background-image: linear-gradient(
       to right bottom,
       rgba($color-primary-light, 0.8),
@@ -15,4 +15,8 @@
 
   clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
   margin-top: -10rem;
+
+  @media screen and (max-width: 1980px) {
+    //padding: $pad-md;
+  }
 }

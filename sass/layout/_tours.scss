@@ -4,10 +4,10 @@
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 2rem;
   justify-items: center;
-  padding: $default-padding;
+  padding: $pad-lg 0;
 
   background-color: $color-grey-light-1;
-  margin-top: -24rem;
+  margin-top: -14rem;
 
   &__heading {
     grid-row: 1 / span 3;
@@ -17,7 +17,12 @@
   &__content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
     grid-gap: 10rem;
     padding: 3rem 0;
+
+    @media screen and (max-width: 1980px) {
+      //padding: $pad-md;
+    }
   }
 }
