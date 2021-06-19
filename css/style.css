@@ -204,6 +204,9 @@ body {
     color: transparent; }
   .feature-card:hover {
     transform: translateY(-1.5rem) scale(1.03); }
+  @media screen and (max-width: 1280px) {
+    .feature-card__row1 {
+      grid-column: 1 / span 2; } }
 
 .card {
   perspective: 150rem;
@@ -509,6 +512,14 @@ body {
   @media (min-resolution: 192dpi) {
     .header {
       background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg); } }
+  @media screen and (max-width: 1200px) {
+    .header {
+      height: 70vh;
+      clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%); } }
+  @media screen and (max-width: 900px) {
+    .header {
+      height: 50vh;
+      clip-path: polygon(0 0, 100% 0, 100% 30vh, 0 100%); } }
   .header__logo-box {
     position: absolute;
     top: 40px;
@@ -524,14 +535,6 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
-  @media (max-width: 75em) {
-    .header {
-      height: 70vh;
-      clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%); } }
-  @media (max-width: 56.25em) {
-    .header {
-      height: 50vh;
-      clip-path: polygon(0 0, 100% 0, 100% 30vh, 0 100%); } }
 
 .about {
   width: 100vw;
@@ -561,7 +564,7 @@ body {
 .features {
   width: 100vw;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 30rem));
+  grid-template-columns: repeat(4, minmax(25rem, 30rem));
   grid-gap: 6rem;
   justify-content: center;
   padding: 30rem 0;
@@ -569,6 +572,13 @@ body {
   background-size: cover;
   clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
   margin-top: -10rem; }
+  @media screen and (max-width: 1280px) {
+    .features {
+      grid-template-columns: repeat(2, minmax(25rem, 30rem));
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
+  @media screen and (max-width: 900px) {
+    .features {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
 
 .tours {
   width: 100vw;
@@ -588,6 +598,9 @@ body {
     justify-items: center;
     grid-gap: 10rem;
     padding: 3rem 0; }
+    @media screen and (max-width: 1280px) {
+      .tours__content {
+        grid-template-columns: 1fr; } }
 
 .stories {
   width: 100vw;

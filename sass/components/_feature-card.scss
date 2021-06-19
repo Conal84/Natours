@@ -24,4 +24,10 @@
   &:hover {
     transform: translateY(-1.5rem) scale(1.03);
   }
+
+  &__row1 {
+    @media screen and (max-width: 1280px) {
+      grid-column: 1 / span 2;
+    }
+  }
 }

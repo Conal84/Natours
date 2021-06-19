@@ -21,6 +21,16 @@
       url(../img/hero.jpg);
   }
 
+  @media screen and (max-width: 1200px) {
+    height: 70vh;
+    clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
+  }
+
+  @media screen and (max-width: 900px) {
+    height: 50vh;
+    clip-path: polygon(0 0, 100% 0, 100% 30vh, 0 100%);
+  }
+
   &__logo-box {
     position: absolute;
     top: 40px;
@@ -41,15 +51,5 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-  }
-
-  @include respond(tab-land) {
-    height: 70vh;
-    clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
-  }
-
-  @include respond(tab-port) {
-    height: 50vh;
-    clip-path: polygon(0 0, 100% 0, 100% 30vh, 0 100%);
   }
 }
