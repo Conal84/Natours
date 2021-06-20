@@ -4,7 +4,7 @@
   grid-template-columns: repeat(4, minmax(25rem, 30rem));
   grid-gap: 6rem;
   justify-content: center;
-  padding: $pad-lg 0;
+  padding: $pad-md $pad-sm;
   background-image: linear-gradient(
       to right bottom,
       rgba($color-primary-light, 0.8),
@@ -13,15 +13,15 @@
     url(../img/nat-4.jpg);
   background-size: cover;
 
-  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
   margin-top: -10rem;
 
   @media screen and (max-width: 1280px) {
     grid-template-columns: repeat(2, minmax(25rem, 30rem));
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
   }
 
-  @media screen and (max-width: 900px) {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  @media screen and (max-width: 750px) {
+    grid-template-columns: minmax(25rem, 30rem);
   }
 }
