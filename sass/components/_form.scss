@@ -1,6 +1,10 @@
 .form {
   &__group:not(:last-child) {
     margin-bottom: 2rem;
+
+    @media screen and (max-width: 750px) {
+      margin-bottom: 1rem;
+    }
   }
 
   &__input {
