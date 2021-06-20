@@ -4,12 +4,13 @@
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 2rem;
   justify-items: center;
-  padding: $pad-lg 0;
+  padding: $pad-lg $pad-md $pad-md $pad-md;
 
   background-color: $color-grey-light-1;
   margin-top: -14rem;
 
   &__heading {
+    text-align: center;
     grid-row: 1 / span 3;
     text-transform: uppercase;
   }
@@ -18,7 +19,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-    grid-gap: 10rem;
+    grid-gap: 5rem;
     padding: 3rem 0;
 
     @media screen and (max-width: 1280px) {

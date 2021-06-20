@@ -1,7 +1,7 @@
 .about {
   width: 100vw;
   background-color: $color-grey-light-1;
-  padding: $pad-md;
+  padding: $pad-lg $pad-md $pad-md $pad-md;
   margin-top: -20vh;
 
   display: grid;
@@ -11,8 +11,8 @@
   grid-column-gap: 2rem;
   justify-items: center;
 
-  @media screen and (max-width: 1200px) {
-    padding: $pad-md;
+  @media screen and (max-width: 900px) {
+    padding: $pad-md $pad-sm $pad-sm $pad-sm;
   }
 
   &__heading {
@@ -26,8 +26,13 @@
 
   &__text {
     @media screen and (max-width: 1200px) {
+      text-align: center;
       width: 75%;
       grid-column: 1 / span 2;
+    }
+
+    @media screen and (max-width: 900px) {
+      width: 100%;
     }
   }
 }

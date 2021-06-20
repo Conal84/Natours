@@ -5,6 +5,14 @@
   grid-gap: 2rem;
   justify-items: center;
   align-items: center;
-  padding: $pad-lg;
+  padding: $pad-md;
   position: relative;
+
+  @media screen and (max-width: 900px) {
+    padding: $pad-sm;
+  }
+
+  &__heading {
+    text-align: center;
+  }
 }
