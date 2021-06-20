@@ -12,7 +12,15 @@
     padding: $pad-sm;
   }
 
+  @media screen and (max-width: 600px) {
+    padding: $pad-xs;
+  }
+
   &__heading {
     text-align: center;
+
+    @media screen and (max-width: 500px) {
+      font-size: 2.5rem;
+    }
   }
 }

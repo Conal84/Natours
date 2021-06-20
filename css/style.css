@@ -318,6 +318,10 @@ body {
   @media screen and (max-width: 1000px) {
     .story {
       width: 100%; } }
+  @media screen and (max-width: 600px) {
+    .story {
+      transform: skewX(0);
+      padding: 3rem; } }
   .story__shape {
     width: 15rem;
     height: 15rem;
@@ -328,12 +332,32 @@ body {
     transform: translateX(-3rem) skewX(12deg);
     position: relative;
     overflow: hidden; }
+    @media screen and (max-width: 700px) {
+      .story__shape {
+        width: 10rem;
+        height: 10rem;
+        transform: translateX(-4rem) skewX(12deg); } }
+    @media screen and (max-width: 600px) {
+      .story__shape {
+        width: 8rem;
+        height: 8rem;
+        transform: translateX(-1rem) skewX(0); } }
+    @media screen and (max-width: 400px) {
+      .story__shape {
+        float: none;
+        transform: translateX(50%); } }
   .story__image {
     height: 100%;
     transform: translateX(-4rem) scale(1.4);
     transition: all 0.5s; }
+    @media screen and (max-width: 700px) {
+      .story__image {
+        transform: translateX(-3rem) scale(1.4); } }
   .story__text {
     transform: skewX(12deg); }
+    @media screen and (max-width: 600px) {
+      .story__text {
+        transform: skewX(0); } }
   .story__caption {
     position: absolute;
     top: 50%;
@@ -624,8 +648,14 @@ body {
   @media screen and (max-width: 900px) {
     .stories {
       padding: 10rem; } }
+  @media screen and (max-width: 600px) {
+    .stories {
+      padding: 5rem; } }
   .stories__heading {
     text-align: center; }
+    @media screen and (max-width: 500px) {
+      .stories__heading {
+        font-size: 2.5rem; } }
 
 .book {
   width: 100vw;
