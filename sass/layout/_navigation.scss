@@ -105,6 +105,18 @@
       );
       background-size: 220%;
       transition: all 0.2s;
+
+      @media screen and (max-width: 500px) {
+        font-size: 2.5rem;
+      }
+
+      @media screen and (max-width: 400px) {
+        font-size: 2rem;
+      }
+
+      @media screen and (max-width: 320px) {
+        font-size: 1.75rem;
+      }
     }
 
     &:hover,
