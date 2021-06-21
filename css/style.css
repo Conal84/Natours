@@ -758,6 +758,18 @@ body {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;
   cursor: pointer; }
+  @media screen and (max-width: 900px) {
+    .navigation__button {
+      height: 5rem;
+      width: 5rem;
+      top: 4rem;
+      right: 4rem; } }
+  @media screen and (max-width: 320px) {
+    .navigation__button {
+      height: 4rem;
+      width: 4rem;
+      top: 3rem;
+      right: 3rem; } }
 
 .navigation__background {
   height: 6rem;
@@ -769,6 +781,18 @@ body {
   background-image: radial-gradient(#7ed56f, #28b485);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
+  @media screen and (max-width: 900px) {
+    .navigation__background {
+      height: 4rem;
+      width: 4rem;
+      top: 4.5rem;
+      right: 4.5rem; } }
+  @media screen and (max-width: 320px) {
+    .navigation__background {
+      height: 3rem;
+      width: 3rem;
+      top: 3.5rem;
+      right: 3.5rem; } }
 
 .navigation__nav {
   height: 100vh;
@@ -823,11 +847,23 @@ body {
 .navigation__icon {
   position: relative;
   margin-top: 3.5rem; }
+  @media screen and (max-width: 900px) {
+    .navigation__icon {
+      margin-top: 2.5rem; } }
+  @media screen and (max-width: 320px) {
+    .navigation__icon {
+      margin-top: 2rem; } }
   .navigation__icon, .navigation__icon::before, .navigation__icon::after {
     width: 3rem;
     height: 2px;
     background-color: #333;
     display: inline-block; }
+    @media screen and (max-width: 900px) {
+      .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+        width: 2rem; } }
+    @media screen and (max-width: 320px) {
+      .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+        width: 1.5rem; } }
   .navigation__icon::before, .navigation__icon::after {
     content: '';
     position: absolute;
@@ -835,14 +871,26 @@ body {
     transition: all 0.2s; }
   .navigation__icon::before {
     top: -0.8rem; }
+    @media screen and (max-width: 320px) {
+      .navigation__icon::before {
+        top: -0.5rem; } }
   .navigation__icon::after {
     top: 0.8rem; }
+    @media screen and (max-width: 320px) {
+      .navigation__icon::after {
+        top: 0.5rem; } }
 
 .navigation__button:hover .navigation__icon:before {
   top: -1rem; }
+  @media screen and (max-width: 320px) {
+    .navigation__button:hover .navigation__icon:before {
+      top: -0.5rem; } }
 
 .navigation__button:hover .navigation__icon:after {
   top: 1rem; }
+  @media screen and (max-width: 320px) {
+    .navigation__button:hover .navigation__icon:after {
+      top: 0.5rem; } }
 
 .navigation__checkbox:checked + .navigation__button .navigation__icon {
   background-color: transparent; }
