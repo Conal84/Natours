@@ -14,6 +14,16 @@
   visibility: hidden;
   transition: all 0.3s;
 
+  &__heading {
+    @media screen and (max-width: 950px) {
+      font-size: 2.5rem;
+    }
+
+    @media screen and (max-width: 350px) {
+      font-size: 2rem;
+    }
+  }
+
   &__content {
     height: 75vh;
     width: 75vw;
@@ -31,12 +41,24 @@
     opacity: 0;
     transform: scale(0.5);
     transition: all 0.3s 0.2s;
+
+    @media screen and (max-width: 600px) {
+      height: 100vh;
+      width: 100vw;
+
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+    }
   }
 
   &__img {
     height: 37.5vh;
     width: 25vw;
     object-fit: cover;
+
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
   }
 
   &__text-section {
