@@ -10,6 +10,10 @@
     $color-primary-dark
   );
 
+  @media screen and (max-width: 320px) {
+    padding: $pad-sm 0;
+  }
+
   &__container {
     height: 100%;
     width: 90%;

@@ -10,6 +10,10 @@
   background-color: $color-grey-dark-3;
   font-size: 1.4rem;
 
+  @media screen and (max-width: 320px) {
+    padding: $pad-sm $pad-xs 0 $pad-xs;
+  }
+
   &__logo-box {
     grid-column: 1 / span 2;
   }

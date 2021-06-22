@@ -18,10 +18,6 @@
   &__heading {
     grid-column: 1 / span 2;
     text-align: center;
-
-    @media screen and (max-width: 1200px) {
-      font-size: 2.5rem;
-    }
   }
 
   &__text {
